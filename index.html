@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sourav Mukherjee — Senior GenAI & Full-Stack Engineer</title>
+  <meta name="description" content="Sourav Mukherjee is a Senior GenAI & Full-Stack Software Engineer with 7+ years of experience in Python, FastAPI, AWS, Amazon Bedrock, LLMs, RAG, React and Next.js." />
+  <meta name="keywords" content="Sourav Mukherjee, GenAI Engineer, Full-Stack Developer, Python, FastAPI, AWS, Amazon Bedrock, LLM, RAG, React, Next.js, AI Engineer, Universe Invedors" />
+  <meta name="author" content="Sourav Mukherjee" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://sourav.universeinvedors.tech/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="Sourav Mukherjee — Senior GenAI & Full-Stack Engineer" />
+  <meta property="og:description" content="Building production-ready AI applications, LLM-powered systems and full-stack products. Founder & CEO at Universe Invedors." />
+  <meta property="og:url" content="https://sourav.universeinvedors.tech/" />
+  <meta property="og:site_name" content="Sourav Mukherjee" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Sourav Mukherjee — Senior GenAI & Full-Stack Engineer" />
+  <meta name="twitter:description" content="7+ years building AI systems, LLM applications, RAG pipelines and full-stack products." />
+
+  <!-- AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8759032363251002" crossorigin="anonymous"></script>
+
+  <!-- Schema.org Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Sourav Mukherjee",
+    "jobTitle": "Senior GenAI & Full-Stack Software Engineer",
+    "description": "Senior GenAI & Full-Stack Software Engineer with 7+ years of experience specializing in Python, FastAPI, AWS, Amazon Bedrock, LLMs, RAG, React and Next.js.",
+    "url": "https://sourav.universeinvedors.tech/",
+    "sameAs": [
+      "https://www.linkedin.com/in/sourav-mukherjee-5547a1260",
+      "https://universeinvedors.tech"
+    ],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Universe Invedors",
+      "url": "https://universeinvedors.tech"
+    },
+    "alumniOf": [
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "Techno India College Of Technology"
+      },
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "Haldia Institute of Technology"
+      }
+    ],
+    "knowsAbout": ["GenAI", "LLM", "RAG", "Python", "FastAPI", "AWS", "Amazon Bedrock", "React", "Next.js", "AI Agents", "Full-Stack Development"]
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #0a0a0f;
+      --bg2: #111118;
+      --bg3: #16161f;
+      --border: #1e1e2e;
+      --accent: #6366f1;
+      --accent2: #8b5cf6;
+      --accent3: #06b6d4;
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+      --card: #13131a;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    /* ── TOPBAR ── */
+    .topbar {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      background: rgba(10,10,15,0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 2rem;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .topbar-brand {
+      font-weight: 700;
+      font-size: 1rem;
+      background: linear-gradient(135deg, var(--accent), var(--accent3));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-decoration: none;
+    }
+    .topbar-nav { display: flex; gap: 1.5rem; list-style: none; }
+    .topbar-nav a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.875rem;
+      transition: color 0.2s;
+    }
+    .topbar-nav a:hover { color: var(--text); }
+
+    /* ── HERO ── */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5rem 2rem 4rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -200px; left: 50%;
+      transform: translateX(-50%);
+      width: 800px; height: 800px;
+      background: radial-gradient(circle, rgba(99,102,241,0.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero-inner {
+      max-width: 760px;
+      width: 100%;
+      text-align: center;
+      position: relative;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(99,102,241,0.12);
+      border: 1px solid rgba(99,102,241,0.3);
+      border-radius: 100px;
+      padding: 0.35rem 1rem;
+      font-size: 0.8rem;
+      color: #a5b4fc;
+      margin-bottom: 1.5rem;
+    }
+    .hero-badge span { width: 6px; height: 6px; border-radius: 50%; background: #6366f1; display: inline-block; animation: pulse 2s infinite; }
+    @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.5;transform:scale(1.4)} }
+
+    .hero h1 {
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+      margin-bottom: 0.5rem;
+    }
+    .hero h1 .name-accent {
+      background: linear-gradient(135deg, var(--accent), var(--accent3));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .hero-title {
+      font-size: 1.15rem;
+      color: var(--muted);
+      margin-bottom: 1.5rem;
+      font-weight: 500;
+    }
+    .hero-location {
+      font-size: 0.875rem;
+      color: var(--muted);
+      margin-bottom: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+    }
+    .hero-summary {
+      font-size: 1rem;
+      color: #b0bfd4;
+      max-width: 620px;
+      margin: 0 auto 2.5rem;
+      line-height: 1.75;
+    }
+    .hero-ctas {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.75rem;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.2s;
+      cursor: pointer;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      color: #fff;
+      border: none;
+    }
+    .btn-primary:hover { opacity: 0.9; transform: translateY(-1px); box-shadow: 0 8px 24px rgba(99,102,241,0.35); }
+    .btn-outline {
+      background: transparent;
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+    .btn-outline:hover { border-color: var(--accent); color: #a5b4fc; transform: translateY(-1px); }
+
+    /* ── STATS ── */
+    .stats {
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+      flex-wrap: wrap;
+      padding: 3rem 2rem;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      background: var(--bg2);
+    }
+    .stat { text-align: center; }
+    .stat-number {
+      font-size: 2rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--accent), var(--accent3));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .stat-label { font-size: 0.8rem; color: var(--muted); margin-top: 0.2rem; text-transform: uppercase; letter-spacing: 0.08em; }
+
+    /* ── SECTION COMMON ── */
+    section { padding: 5rem 2rem; }
+    .section-inner { max-width: 900px; margin: 0 auto; }
+    .section-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--accent);
+      margin-bottom: 0.75rem;
+    }
+    .section-title {
+      font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 3rem;
+    }
+
+    /* ── SKILLS ── */
+    #skills { background: var(--bg2); }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1.25rem;
+    }
+    .skill-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .skill-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+    .skill-card-icon {
+      width: 40px; height: 40px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, rgba(99,102,241,0.2), rgba(139,92,246,0.2));
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.2rem;
+      margin-bottom: 0.75rem;
+    }
+    .skill-card h3 { font-size: 0.95rem; font-weight: 700; margin-bottom: 0.5rem; }
+    .skill-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.75rem; }
+    .tag {
+      background: rgba(99,102,241,0.1);
+      border: 1px solid rgba(99,102,241,0.2);
+      color: #a5b4fc;
+      border-radius: 100px;
+      padding: 0.2rem 0.65rem;
+      font-size: 0.72rem;
+      font-weight: 500;
+    }
+
+    /* ── EXPERIENCE ── */
+    #experience { background: var(--bg); }
+    .timeline { position: relative; }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 20px; top: 0; bottom: 0;
+      width: 2px;
+      background: linear-gradient(to bottom, var(--accent), transparent);
+    }
+    .timeline-item {
+      display: flex;
+      gap: 2rem;
+      margin-bottom: 3rem;
+      position: relative;
+    }
+    .timeline-dot {
+      flex-shrink: 0;
+      width: 40px; height: 40px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1rem;
+      position: relative;
+      z-index: 1;
+      box-shadow: 0 0 0 4px rgba(99,102,241,0.15);
+    }
+    .timeline-content {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem;
+      flex: 1;
+      transition: border-color 0.2s;
+    }
+    .timeline-content:hover { border-color: rgba(99,102,241,0.4); }
+    .timeline-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .timeline-role { font-size: 1.05rem; font-weight: 700; }
+    .timeline-company {
+      font-size: 0.9rem;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+    .timeline-meta {
+      font-size: 0.78rem;
+      color: var(--muted);
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .timeline-desc {
+      margin-top: 0.75rem;
+      font-size: 0.875rem;
+      color: #b0bfd4;
+      line-height: 1.7;
+    }
+    .timeline-desc ul { list-style: none; }
+    .timeline-desc ul li { padding: 0.2rem 0; padding-left: 1rem; position: relative; }
+    .timeline-desc ul li::before { content: '▸'; position: absolute; left: 0; color: var(--accent); }
+
+    /* ── EDUCATION ── */
+    #education { background: var(--bg2); }
+    .edu-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.25rem; }
+    .edu-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .edu-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+    .edu-icon {
+      width: 44px; height: 44px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, rgba(6,182,212,0.2), rgba(99,102,241,0.2));
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+    }
+    .edu-degree { font-size: 1rem; font-weight: 700; margin-bottom: 0.25rem; }
+    .edu-school { font-size: 0.875rem; color: var(--accent3); font-weight: 600; margin-bottom: 0.25rem; }
+    .edu-year { font-size: 0.78rem; color: var(--muted); }
+
+    /* ── PROJECTS HIGHLIGHT ── */
+    #projects { background: var(--bg); }
+    .projects-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.25rem; }
+    .project-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.75rem;
+      transition: border-color 0.2s, transform 0.2s;
+      position: relative;
+      overflow: hidden;
+    }
+    .project-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--accent), var(--accent3));
+    }
+    .project-card:hover { border-color: rgba(99,102,241,0.4); transform: translateY(-3px); }
+    .project-card h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 0.5rem; }
+    .project-card p { font-size: 0.875rem; color: var(--muted); line-height: 1.6; margin-bottom: 1rem; }
+
+    /* ── AD SLOT ── */
+    .ad-slot {
+      padding: 2rem;
+      text-align: center;
+      background: var(--bg3);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    /* ── CONTACT ── */
+    #contact { background: var(--bg2); }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+    @media (max-width: 600px) { .contact-grid { grid-template-columns: 1fr; } }
+    .contact-item {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      text-decoration: none;
+      color: var(--text);
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .contact-item:hover { border-color: var(--accent); transform: translateY(-2px); }
+    .contact-icon {
+      width: 44px; height: 44px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, rgba(99,102,241,0.2), rgba(139,92,246,0.2));
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.3rem;
+      flex-shrink: 0;
+    }
+    .contact-label { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
+    .contact-value { font-size: 0.95rem; font-weight: 600; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--bg);
+      border-top: 1px solid var(--border);
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+    footer a { color: var(--accent); text-decoration: none; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 640px) {
+      .topbar-nav { display: none; }
+      .timeline::before { left: 16px; }
+      .timeline-dot { width: 32px; height: 32px; font-size: 0.85rem; }
+      .timeline-item { gap: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TOPBAR -->
+  <header class="topbar">
+    <a href="#" class="topbar-brand">Sourav Mukherjee</a>
+    <nav>
+      <ul class="topbar-nav">
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-inner">
+      <div class="hero-badge">
+        <span></span>
+        Open to GenAI & AI Product opportunities
+      </div>
+      <h1>
+        <span class="name-accent">Sourav Mukherjee</span>
+      </h1>
+      <p class="hero-title">Senior GenAI &amp; Full-Stack Software Engineer</p>
+      <p class="hero-location">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+        Greater Kolkata Area, India
+      </p>
+      <p class="hero-summary">
+        Building production-ready AI applications and full-stack products — from LLM orchestration and RAG pipelines to backend APIs, modern web interfaces and cloud infrastructure. Founder &amp; CEO at Universe Invedors.
+      </p>
+      <div class="hero-ctas">
+        <a href="#contact" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Get In Touch
+        </a>
+        <a href="https://www.linkedin.com/in/sourav-mukherjee-5547a1260" target="_blank" rel="noopener" class="btn btn-outline">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          LinkedIn
+        </a>
+        <a href="https://universeinvedors.tech" target="_blank" rel="noopener" class="btn btn-outline">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg>
+          Universe Invedors
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <div class="stats">
+    <div class="stat">
+      <div class="stat-number">7+</div>
+      <div class="stat-label">Years Experience</div>
+    </div>
+    <div class="stat">
+      <div class="stat-number">6</div>
+      <div class="stat-label">Companies</div>
+    </div>
+    <div class="stat">
+      <div class="stat-number">1K+</div>
+      <div class="stat-label">LinkedIn Followers</div>
+    </div>
+    <div class="stat">
+      <div class="stat-number">∞</div>
+      <div class="stat-label">Ideas Building</div>
+    </div>
+  </div>
+
+  <!-- AD SLOT -->
+  <div class="ad-slot">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-8759032363251002"
+         data-ad-slot="auto"
+         data-ad-format="horizontal"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-inner">
+      <p class="section-label">What I do</p>
+      <h2 class="section-title">Core Expertise</h2>
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <div class="skill-card-icon">🤖</div>
+          <h3>Generative AI Engineering</h3>
+          <p style="font-size:0.85rem;color:var(--muted);margin-top:0.25rem">LLM-powered applications, AI agents, RAG pipelines and enterprise AI systems.</p>
+          <div class="skill-tags">
+            <span class="tag">LLMs</span>
+            <span class="tag">RAG</span>
+            <span class="tag">AI Agents</span>
+            <span class="tag">Function Calling</span>
+            <span class="tag">Amazon Bedrock</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-icon">🐍</div>
+          <h3>Backend Engineering</h3>
+          <p style="font-size:0.85rem;color:var(--muted);margin-top:0.25rem">REST APIs, async services, AI pipelines and scalable application architectures.</p>
+          <div class="skill-tags">
+            <span class="tag">Python</span>
+            <span class="tag">FastAPI</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">REST APIs</span>
+            <span class="tag">Microservices</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-icon">⚛️</div>
+          <h3>Frontend Development</h3>
+          <p style="font-size:0.85rem;color:var(--muted);margin-top:0.25rem">Modern AI interfaces, SaaS dashboards and interactive web experiences.</p>
+          <div class="skill-tags">
+            <span class="tag">React</span>
+            <span class="tag">Next.js</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">Tailwind CSS</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-icon">☁️</div>
+          <h3>Cloud & DevOps</h3>
+          <p style="font-size:0.85rem;color:var(--muted);margin-top:0.25rem">AWS infrastructure, containerised deployments and CI/CD pipelines.</p>
+          <div class="skill-tags">
+            <span class="tag">AWS</span>
+            <span class="tag">Lambda</span>
+            <span class="tag">EC2 / S3</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Kubernetes</span>
+            <span class="tag">Terraform</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-icon">🔬</div>
+          <h3>AI / ML Engineering</h3>
+          <p style="font-size:0.85rem;color:var(--muted);margin-top:0.25rem">Computer vision, NLP, model integration and AI workflow automation.</p>
+          <div class="skill-tags">
+            <span class="tag">PyTorch</span>
+            <span class="tag">Hugging Face</span>
+            <span class="tag">Computer Vision</span>
+            <span class="tag">NLP</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-icon">🌐</div>
+          <h3>Specialised Engineering</h3>
+          <p style="font-size:0.85rem;color:var(--muted);margin-top:0.25rem">3D environments, AR/XR, digital twins and real-time application systems.</p>
+          <div class="skill-tags">
+            <span class="tag">3D / AR / XR</span>
+            <span class="tag">Digital Twins</span>
+            <span class="tag">Real-time Systems</span>
+            <span class="tag">Blender</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="section-inner">
+      <p class="section-label">Career</p>
+      <h2 class="section-title">Work Experience</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot">🚀</div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <div class="timeline-role">Founder &amp; CEO</div>
+                <div class="timeline-company">Universe Invedors</div>
+              </div>
+            </div>
+            <div class="timeline-meta">
+              <span>📅 Jun 2026 – Present</span>
+              <span>📍 India</span>
+            </div>
+            <div class="timeline-desc">
+              <ul>
+                <li>Lead development of a multi-product technology ecosystem spanning AI, software, gaming, education, career, health, wellness, finance and productivity solutions.</li>
+                <li>Drive product strategy, technical architecture and end-to-end engineering across web, mobile, AI and cloud-based applications.</li>
+                <li>Design scalable architectures with reusable backend services, AI-enabled workflows and cloud-hosted product delivery.</li>
+                <li>Lead development across AI/GenAI integration, frontend and backend engineering, DevOps and product releases.</li>
+              </ul>
+            </div>
+            <div class="skill-tags" style="margin-top:1rem">
+              <span class="tag">GenAI</span><span class="tag">Next.js</span><span class="tag">AWS</span><span class="tag">Product Strategy</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot">🌐</div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <div class="timeline-role">Tech Lead — AI, Cloud &amp; XR Engineering</div>
+                <div class="timeline-company">InsourceIndia</div>
+              </div>
+            </div>
+            <div class="timeline-meta">
+              <span>📅 Jan 2025 – Jul 2025 · 7 months</span>
+              <span>📍 Mumbai, India</span>
+            </div>
+            <div class="timeline-desc">
+              <ul>
+                <li>Worked on a large-scale metaverse project involving interactive 3D environments and real-time application systems.</li>
+                <li>Developed and optimised complex gameplay and application systems for performance and scalability.</li>
+                <li>Collaborated with multidisciplinary teams to translate product requirements into functional technology solutions.</li>
+              </ul>
+            </div>
+            <div class="skill-tags" style="margin-top:1rem">
+              <span class="tag">XR / 3D</span><span class="tag">Metaverse</span><span class="tag">Cloud</span><span class="tag">Real-time Systems</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot">💻</div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <div class="timeline-role">Senior Software Developer — AI, Computer Vision &amp; Full-Stack</div>
+                <div class="timeline-company">Mobile Programming LLC</div>
+              </div>
+            </div>
+            <div class="timeline-meta">
+              <span>📅 Jun 2023 – Jul 2024 · 1 yr 2 months</span>
+              <span>📍 Gurugram, India</span>
+            </div>
+            <div class="timeline-desc">
+              <ul>
+                <li>Led frontend and backend teams developing AR and computer vision apps for landscape planning.</li>
+                <li>Collaborated with DevOps and big data specialists to optimise app performance and data processing.</li>
+                <li>Guided the team in implementing cutting-edge technologies to enhance UX and solve complex engineering problems.</li>
+              </ul>
+            </div>
+            <div class="skill-tags" style="margin-top:1rem">
+              <span class="tag">AR</span><span class="tag">Computer Vision</span><span class="tag">React</span><span class="tag">Node.js</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot">🏥</div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <div class="timeline-role">Senior Software Developer — AI, Computer Vision &amp; Full-Stack</div>
+                <div class="timeline-company">CBNITS</div>
+              </div>
+            </div>
+            <div class="timeline-meta">
+              <span>📅 Sep 2022 – Jan 2023 · 5 months</span>
+            </div>
+            <div class="timeline-desc">
+              <ul>
+                <li>Led development of a healthcare platform connecting doctors and patients through virtual consultation environments.</li>
+                <li>Developed workflows covering virtual consultations, prescriptions, medicine discovery and purchasing.</li>
+                <li>Integrated REST APIs, payment SDKs and external services; designed responsive multi-scene user experiences.</li>
+              </ul>
+            </div>
+            <div class="skill-tags" style="margin-top:1rem">
+              <span class="tag">Healthcare Tech</span><span class="tag">Full-Stack</span><span class="tag">REST APIs</span><span class="tag">Payment SDK</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot">⚡</div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <div class="timeline-role">Full-Stack Developer — React, Node.js &amp; 3D Applications</div>
+                <div class="timeline-company">SDLC Corp</div>
+              </div>
+            </div>
+            <div class="timeline-meta">
+              <span>📅 Sep 2021 – Dec 2021 · 4 months</span>
+              <span>📍 Delhi, India</span>
+            </div>
+            <div class="timeline-desc">
+              <ul>
+                <li>Built enterprise AR/3D applications combining interactive UIs, real-time data and immersive visualisation.</li>
+                <li>Developed full-stack workflows integrating frontend experiences with backend services and APIs.</li>
+              </ul>
+            </div>
+            <div class="skill-tags" style="margin-top:1rem">
+              <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">3D</span><span class="tag">Enterprise</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot">🎓</div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <div class="timeline-role">Lead Developer &amp; Technical Instructor</div>
+                <div class="timeline-company">virtualinfocom</div>
+              </div>
+            </div>
+            <div class="timeline-meta">
+              <span>📅 Sep 2019 – Sep 2021 · 2 yrs 1 month</span>
+            </div>
+            <div class="timeline-desc">
+              <ul>
+                <li>Delivered technical training in software development, programming and emerging technologies.</li>
+                <li>Guided students and junior developers through programming concepts, software architecture and practical development.</li>
+                <li>Mentored learners through debugging, implementation and project development.</li>
+              </ul>
+            </div>
+            <div class="skill-tags" style="margin-top:1rem">
+              <span class="tag">Technical Mentoring</span><span class="tag">Software Engineering</span><span class="tag">Training</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- AD SLOT -->
+  <div class="ad-slot">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-8759032363251002"
+         data-ad-slot="auto"
+         data-ad-format="rectangle"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="section-inner">
+      <p class="section-label">Academic Background</p>
+      <h2 class="section-title">Education</h2>
+      <div class="edu-grid">
+
+        <div class="edu-card">
+          <div class="edu-icon">🎓</div>
+          <div class="edu-degree">Master of Computer Applications</div>
+          <div class="edu-school">Techno India College Of Technology</div>
+          <div class="edu-year">Post Graduate</div>
+        </div>
+
+        <div class="edu-card">
+          <div class="edu-icon">🔬</div>
+          <div class="edu-degree">Master's Degree — Computer Science</div>
+          <div class="edu-school">Haldia Institute of Technology</div>
+          <div class="edu-year">Post Graduate</div>
+        </div>
+
+        <div class="edu-card">
+          <div class="edu-icon">📚</div>
+          <div class="edu-degree">Bachelor's Degree — Computer Science</div>
+          <div class="edu-school">Techno India College Of Technology</div>
+          <div class="edu-year">2015 – 2018</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-inner">
+      <p class="section-label">Featured Work</p>
+      <h2 class="section-title">Notable Projects</h2>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <h3>🎬 AI Scientific Video Generator</h3>
+          <p>Automated pipeline generating scientific videos from prompts using Python, FastAPI, PyTorch, Hugging Face and Next.js.</p>
+          <div class="skill-tags">
+            <span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">PyTorch</span><span class="tag">Hugging Face</span><span class="tag">Next.js</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>🎮 AutoGameGen</h3>
+          <p>Prompt-to-playable-game architecture converting natural language descriptions into fully playable games using Python, FastAPI, Blender and Godot.</p>
+          <div class="skill-tags">
+            <span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">Blender</span><span class="tag">Godot</span><span class="tag">Hugging Face</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>🌌 Universe Invedors Platform</h3>
+          <p>Multi-product technology ecosystem with AI tools, games platform, free web tools on 14 subdomains and a company website built with Next.js 15.</p>
+          <div class="skill-tags">
+            <span class="tag">Next.js 15</span><span class="tag">Cloudflare Pages</span><span class="tag">GenAI</span><span class="tag">AWS</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>🏥 Healthcare Virtual Consultation Platform</h3>
+          <p>Immersive virtual consultation environment connecting doctors and patients with integrated prescriptions, medicine discovery and payment workflows.</p>
+          <div class="skill-tags">
+            <span class="tag">Full-Stack</span><span class="tag">3D / XR</span><span class="tag">REST APIs</span><span class="tag">Healthcare</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>🌿 AR Landscape Planning App</h3>
+          <p>Augmented reality and computer vision application for landscape planning built at Mobile Programming LLC, with big data integration and DevOps optimisation.</p>
+          <div class="skill-tags">
+            <span class="tag">AR</span><span class="tag">Computer Vision</span><span class="tag">React</span><span class="tag">Big Data</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>🔮 Astrology Platform</h3>
+          <p>Live astrology consultation site for Pandit Subrata Mukherjee with Vite + React, deployed on Cloudflare Pages at astrology.universeinvedors.tech.</p>
+          <div class="skill-tags">
+            <span class="tag">React</span><span class="tag">Vite</span><span class="tag">Cloudflare Pages</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-inner">
+      <p class="section-label">Let's work together</p>
+      <h2 class="section-title">Get In Touch</h2>
+      <p style="color:var(--muted);margin-bottom:2rem;max-width:520px">
+        Open to GenAI projects, AI SaaS products, RAG systems, Amazon Bedrock solutions and Python/FastAPI AI backends. If you're building something exciting, let's talk.
+      </p>
+      <div class="contact-grid">
+        <a href="https://www.linkedin.com/in/sourav-mukherjee-5547a1260" target="_blank" rel="noopener" class="contact-item">
+          <div class="contact-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#6366f1"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          </div>
+          <div>
+            <div class="contact-label">LinkedIn</div>
+            <div class="contact-value">sourav-mukherjee-5547a1260</div>
+          </div>
+        </a>
+        <a href="https://universeinvedors.tech" target="_blank" rel="noopener" class="contact-item">
+          <div class="contact-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#06b6d4" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg>
+          </div>
+          <div>
+            <div class="contact-label">Website</div>
+            <div class="contact-value">universeinvedors.tech</div>
+          </div>
+        </a>
+        <a href="https://universeinvedors.tech/contact" target="_blank" rel="noopener" class="contact-item">
+          <div class="contact-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div>
+            <div class="contact-label">Contact Form</div>
+            <div class="contact-value">Send a message</div>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/sourav-mukherjee-5547a1260" target="_blank" rel="noopener" class="contact-item">
+          <div class="contact-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+          </div>
+          <div>
+            <div class="contact-label">Direct Message</div>
+            <div class="contact-value">Message on LinkedIn</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>
+      © 2026 Sourav Mukherjee · Senior GenAI &amp; Full-Stack Engineer ·
+      <a href="https://universeinvedors.tech">Universe Invedors</a>
+    </p>
+    <p style="margin-top:0.5rem">
+      <a href="https://universeinvedors.tech/privacy">Privacy Policy</a> ·
+      <a href="https://universeinvedors.tech/terms">Terms of Service</a>
+    </p>
+  </footer>
+
+</body>
+</html>
